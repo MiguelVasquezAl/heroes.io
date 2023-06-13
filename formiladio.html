@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heres Formulario</title>
+    <link rel="stylesheet" href="./style/styleFormulario.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tienda</h1>
+    </header>
+    <main class="main">
+      <div class="titulo">
+        <h2>Añade tu super!</h2>
+        <p>Agregá tu personaje favorito completando la sopciones</p>
+      </div>
+      <form action="formulario.js" method="get">
+        <div class="fila1">
+          <label for="nombre">*Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="especie">*Especie</label>
+          <input type="text" id="especie" name="especie" required />
+        </div>
+        <div class="fila2">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" required />
+
+          <label for="foto">Agregar Foto</label>
+          <input type="file" id="foto" name="foto" required />
+        </div>
+        <div class="fila3">
+          <div class="descripcion">
+            <label for="descripcion"></label>
+            <textarea name="descripcion" id="descripcion"></textarea>
+          </div>
+          <div class="poderes_tipo">
+            <div class="poderes">
+              <label for="poderes">Poderes</label> <br />
+              <input type="checkbox" id="poder1" name="poder1" value="Volar" />
+              <label for="poder1">Volar</label><br />
+              <input
+                type="checkbox"
+                id="poder2"
+                name="poder2"
+                value="Superinteligencia"
+              />
+              <label for="poder2">Superinteligencia</label> <br />
+              <input
+                type="checkbox"
+                id="poder3"
+                name="poder3"
+                value="Vista de rayos láser"
+              />
+              <label for="poder3">Vista de rayos láser</label> <br />
+              <input
+                type="checkbox"
+                id="poder4"
+                name="poder4"
+                value="Invisibilidad"
+              />
+              <label for="poder4">Invisibilidad</label>
+            </div>
+            <div class="tipo_personajes">
+              <label for="tipo">Tipo de personaje</label>
+              <label class="radio-container">Héroe / Heroina</label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      Todos los derechos reservados &copy;
+      <?= date('Y') ?>
+    </footer>
+  </body>
+</html>

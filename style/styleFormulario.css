@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+.main {
+  border: 1px solid #000;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+}
+
+#foto:hover {
+  cursor: pointer;
+  background-color: aqua;
+  height: 100px;
+}
+
+#nombre:hover {
+  cursor: pointer;
+  background-color: aqua;
+  height: 100px;
+  font-stretch: expanded;
+}

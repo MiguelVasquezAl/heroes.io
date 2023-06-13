@@ -7,11 +7,6 @@
 
 /* ------------Dando estilos al HEADER----------------- */
 
-.header {
-  max-width: auto;
-  min-height: auto;
-}
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -30,5 +25,13 @@
 h1 {
   font-weight: normal;
 }
-
 /* ------------Dando estilos al MAIN----------------- */
+
+.main {
+  border: 1px solid black;
+}
+
+.card {
+  height: 1365px;
+  width: 805px;
+}
